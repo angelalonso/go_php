@@ -1,4 +1,5 @@
-/* --------------------- RESET START -----------------*/
+/*     RESET START
+*/
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -31,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
         display: block;
 }
 body {
-        line-height: 2;
+        line-height: 1;
 }
 ol, ul {
         list-style: none;
@@ -49,8 +50,7 @@ table {
         border-spacing: 0;
 }
 
-
-/* --------------------- RESET END -----------------*/
+/*     RESET END    */
 
 
 /*     VARIABLE DEFINITION IS NOT COMPATIBLE WITH CHROME, SO THIS IS JUST A NOTE TO MYSELF    */
@@ -64,18 +64,6 @@ table {
     --yellow:#c00;
 }
 
-/* --------------------- FONTS -----------------*/
-@font-face{
-    font-family: "Euro U light";
-    src: url('../font/EuropeUnderground_light.ttf'),
-    url('../font/EuropeUnderground_light.ttf'); /* IE */
-}
-@font-face{
-    font-family: "Euro U black";
-    src: url('../font/EuropeUnderground_black.ttf'),
-    url('../font/EuropeUnderground_black.ttf'); /* IE */
-}
-
 html,
 button,
 input,
@@ -83,9 +71,15 @@ select,
 textarea {
   background: #eee;
   color: #066;
-  font-family: "Euro U black";
 }
 
+#gametable{
+  background: url('../img/gametable.png');
+  border: 0px solid black;
+  margin: auto;
+  height: 120px;
+  width: 120px;
+}
 #stone_empty a{
   border: 0px solid black;
   color: #fff;
@@ -114,18 +108,7 @@ textarea {
   max-width: 30px;
 }
 
-/* --------------------- TABLES -----------------*/
-
-#gametable{
-  background: url('../img/gametable.png');
-  border: 0px solid black;
-  margin: auto;
-  height: 120px;
-  width: 120px;
-}
-
-/* --------------------- BUTTONS -----------------*/
-
+/*   BUTTONS  */
 #btn_newgame {
   background: #fff;
   color: #eee;
@@ -133,7 +116,6 @@ textarea {
   margin: auto;
   text-align: center;
   vertical-align: middle;
-  width: 150px;
 }
 #btn_newgame :hover{
   background: #777;
@@ -143,43 +125,8 @@ textarea {
   text-align: center;
   vertical-align: middle;
 }
-#btn_exitgame {
-  background: #fff;
-  color: #eee;
-  height: 60px;
-  margin: auto;
-  text-align: center;
-  vertical-align: middle;
-  width: 150px;
-}
-#btn_exitgame :hover{
-  background: #777;
-  color: #eee;
-  height: 60px;
-  margin: auto;
-  text-align: center;
-  vertical-align: middle;
-}
 
-/* --------------------- DIVS -----------------*/
-
-#top_menu{
-  background: #4e859a;
-  color: #ddd;
-  height: 30px;
-  text-align: center;
-
-}
-
-#main_area{
-  border: 1px solid #4e859a;
-  margin: auto;
-  height: 570px;
-  text-align: center;
-  width: 570px;
-
-}
-
+/*    DIVS    */
 #div_nextblack{
   background: #444;
   color: #ddd;
